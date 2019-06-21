@@ -1,0 +1,188 @@
+﻿body{
+    background-color:white;
+}
+.mainFrame {
+    margin-top:10px;
+    margin-left:15px;
+    margin-right:15px;
+    padding-top:10px;
+    padding-bottom:20px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color:#aea2c6;
+}
+.content{
+    background-color:white;
+    width:100%;
+    min-height:500px;
+    height:100%;
+}
+.panels{
+    float:left;
+    background-color:#e0c1c9;
+    min-height:500px;
+    width:20%;
+}
+.panel1{
+    background-color:#eceddf;
+    height:80px;
+}
+.panel2{
+    background-color:#d8e4be;
+    height:80px;
+}
+.panel3{
+    background-color:#c5d9f1;
+    height:80px;
+}
+.panel-button1{
+    color:brown;
+    background-color:#eceddf;
+    border-bottom-color:#333;
+	border:1px solid #eceddf;
+    cursor: pointer;
+    font-family:'Lucida Calligraphy';
+    font-size:large;
+    width:100%;
+    text-shadow:2px 2px 4px black;
+}
+.panel-button1:hover{
+    text-shadow:1px 1px 0px purple,2px 2px 0px blue;
+}
+.panel-button2{
+    color:brown;
+    background-color:#d8e4be;
+    border-bottom-color:#333;
+	border:1px solid #d8e4be;
+    cursor: pointer;
+    font-family:'Lucida Calligraphy';
+    font-size:large;
+    width:100%;
+    animation:lower 10s linear infinite;
+    animation-delay:1s;
+    /*text-shadow:1px 2px 4px black;*/
+}
+.panel-button2:hover{
+    animation:none;
+    text-shadow:1px 1px 0px purple,2px 2px 0px blue;
+}
+.panelLinked-button2{
+    color:brown;
+    background-color:#d8e4be;
+    border-bottom-color:#333;
+	border:1px solid #d8e4be;
+    cursor: pointer;
+    font-family:'Lucida Calligraphy';
+    font-size:large;
+    width:100%;
+    text-shadow:1px 2px 4px black;
+}
+.panelLinked-button2:hover{
+    text-shadow:1px 1px 0px purple,2px 2px 0px blue;
+}
+.panel-button3{
+    color:brown;
+    background-color:#c5d9f1;
+    border-bottom-color:#333;
+	border:1px solid #c5d9f1;
+    cursor: pointer;
+    font-family:'Lucida Calligraphy';
+    font-size:large;
+    width:100%;
+    text-shadow:1px 2px 4px black;
+}
+.panel-button3:hover{
+    text-shadow:1px 1px 0px purple,2px 2px 0px blue;
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px brown,0 0 30px black,0 0 6px red;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+.updatePanels{
+    margin-left:35%;
+    padding-top:5%;
+}
+.topMessage{
+    font-family:'Baskerville Old Face';
+    font-size:150%;
+    color:brown;
+}
+.tableBox{
+    /*background-color:lightgray;*/
+    font-family:Garamond;
+    color:black;
+    margin-top:30px;
+    font-size:125%;
+    /*height:175px;*/
+    /*box-shadow:0px 0px 40px #ccc inset;*/
+    transition: 500ms all ease;
+}
+.tableBoxTd2{
+    padding-left:10px;
+    color:green;
+}
+.tableBoxLabel{
+    font-family:'Baskerville Old Face';
+    font-size:150%;
+    color:brown;
+}
+.styled-button-link {
+	background-color:#5B74A8;
+	border:1px solid #29447E;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;
+	font-size:12px;
+	font-weight:700;
+	padding:2px 6px;
+    cursor:pointer;
+	color:#fff;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.textBox{
+    border: 2px solid rgb(173, 204, 204);
+    padding:3px 3px 3px 3px;
+    box-shadow: 0px 0px 27px white inset;
+    transition:500ms all ease;
+    border-radius:5px;
+}
+.textBox:focus{
+    transition:500ms all ease;
+    padding:3px 30px 3px 3px;
+}
+.message{
+    font-family:'Baskerville Old Face';
+    font-size:125%;
+}
+.logout_button{
+    background-color:#aea2c6;
+    border-bottom-color:#333;
+	border:1px solid #aea2c6;
+    cursor: pointer;
+}
+.feedbackButton{
+    -webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	border-bottom-color:#333;
+	border:1px solid #61c4ea;
+	background-color:#7cceee;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#333;
+	font-family:'Verdana',Arial,sans-serif;
+	font-size:14px;
+	text-shadow:#b2e2f5 0 1px 0;
+	padding:5px;
+    cursor: pointer;
+    margin-top:5px;
+    margin-right:20px;
+}
+
+
+

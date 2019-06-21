@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>Admin Login</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+      
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="Form1" runat="server">
+       <div class="page">  
+       <div class="wholecontent">       
+                <table  id="headertable"  width="80%" style="margin:0px auto 0px auto;" bgcolor="#6A8BBD">
+                       <tr> 
+                            <td style="background-color:#6565A7;">                                    
+                                        <table  width="100%" cellpadding="10" cellspacing="10" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <p style="font-size:35px; color: White;">
+                                                       WELCOME TO<BR/>ADMIN LOGIN CONSOLE
+                                                    </p>
+                                                </td>
+                                                <td  align="center">
+                                                    <p style="font-size:35px; color: White;">
+                                                    <img src="gcettb_logo.jpg"; style="height: 200px; width: 200px; opacity:0.8; margin-left: 11px;"h2">   
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                   
+                          </td>
+                 </tr>
+                 <tr>
+                </tr>
+            
+                <tr align="center" valign="middle">
+                            <td>                           
+                                    <div class="main">
+                                        <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                                    </div>
+                            
+                                    <div class="clear">
+                                    </div>                    
+                            </td>
+                </tr>
+            
+                <tr>
+                    <td align="center">
+                    
+                        <p style="font-size: 16px; color:white;"></p>
+                    
+                    </td>
+                </tr>
+            </table>
+        </div>
+     </div>
+    </form>
+</body>
+</html>

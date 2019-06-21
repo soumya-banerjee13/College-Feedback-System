@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMaster.master.cs" Inherits="adminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+            <title>Feedback Admin</title>
+            <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+            <meta content="text/css" http-equiv="Content-Style-Type"/>                       			
+            <link href="~/Styles/index.css" rel="stylesheet" type="text/css" />
+          	<link href="~/Styles/nav.css" rel="stylesheet" type="text/css" />          
+           	                     						            
+            <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+            </asp:ContentPlaceHolder>       
+    <style type="text/css">
+        .back
+        {
+            background-color:black;
+        }
+    </style>  
+</head>
+
+<body id="mastercon" runat="server">
+        
+	    <!-- end header--->
+		<div class="top-menu-container">
+			    <div class="top-shadow">
+                </div>
+
+				<div class="tmenu">		
+                 <ul class="dj-mtmenu">
+                    <li><a href="#">Master Entry</a>
+	                    <ul>
+                            <li><a href="college_streams.aspx">Add/Remove Streams</a></li>
+                            <li><a href="subj_upload.aspx">Subject Upload</a></li>
+                            <li><a href="db_generate.aspx">Apply Subject Changes</a></li>
+                            <li><a href="option.aspx">Add/Remove Options</a></li>
+                            <li><a href="comment.aspx">Add/Remove Comments</a></li>
+                            <li><a href="user_upload.aspx">Student Entry</a>
+                                <%--<ul>
+                                    <li><a href="#">Excel Upload</a></li>
+                                    <li><a href="#">Manual Entry</a></li>
+                                </ul>--%>
+                            </li> 
+                            <li><a href="viewstudent.aspx">Student details</a></li> 
+                            <li><a href="dellist.aspx">Delete Student list</a></li>
+                            <li><a href="attn_upload.aspx">Students Attendance Upload</a></li>                                                                             																		                
+		                </ul>	
+                    </li>	                                 
+                                                                      						              										                                
+                    <li><a href="#">Student Feedback</a>
+                        <ul>
+                            <li><a href="fdb_gateway.aspx">Manipulate Feedbacks</a></li>
+                            <li><a href="fdb_del.aspx">Delete Feedbacks</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="#">Compressed Database</a>
+                         <ul>
+                            <li><a href="view_compr.aspx">View Compressed Data</a></li>
+                            <li><a href="del_compr.aspx">Delete Compressed Data</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Start Dates</a>
+                         <ul>
+                             <li><a href="setdate.aspx">Set Start Dates</a></li>
+                             <li><a href="viewDate.aspx">View Start Dates</a></li>
+                             <li><a href="closeFeedback.aspx">Close Feedback</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                         <a href="#">Miscellaneous</a>
+                         <ul>
+                             <li><a href="userName_query.aspx">Username Query</a></li>
+                             <li><a href="#">Manual User Entry</a></li>
+                             <li><a href="deleteUser_manually.aspx">Delete Username</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">Admin Profile</a>
+                          <ul>
+                             <li><a href="changepassword.aspx">Change password</a></li>
+                          </ul>
+                     </li>
+                     <li><a href="logout.aspx"><u>Logout</u></a>
+	                    
+                    </li>	 				                    		
+                </ul>				
+            </div>
+		</div> <!--end menu -->
+    
+  <%--<asp:ImageButton ID="btnlogout" runat="server" ImageUrl="images/lo1.jpg" Height="60px" OnClick="btnlogout_Click" Width="64px" />--%>
+        <div class="all"><!--content start-->
+			 <div class="wrap">
+								 
+				  <div class="content">																		
+                            <div class="main">
+                                <table width="100%" frame="box">
+                                        <tr>
+                                            <td>
+                                                <asp:ContentPlaceHolder ID="UserContent" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>                                        
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <form id="form1" runat="server">
+                                                      <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                                      </asp:ContentPlaceHolder>
+                                                </form>  
+                                            </td>
+                                        </tr>  
+                                </table>         
+				            </div>
+                 </div><!---end of content-->	           	
+		    </div><!---end of wrap-->
+		</div><!--end of all-->
+    
+   	   		<div>GCETTB Student Feedback System Version : 2.0   &copy; GCETTB</div>		
+		<div class="footer">
+			<p style="color:white;">Designed by- Avijit Bose,Soumya Banerjee,Mostafize Mondal(CSE 2013-17)</p>
+		</div>		  
+</body>
+</html>
